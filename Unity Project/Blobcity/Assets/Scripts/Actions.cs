@@ -16,10 +16,11 @@ public static class Actions
     //Mark & Match
     public static Action OnMarked;
     public static Action OnMatch;
-    
+
     //UI
     public static Action <BlobData> OnBlobMarked;
     public static Action <HouseData> OnHouseMarked;
+    public static Action OnMatchMade;
     
     //Saving & Loading
     public static Action<GameObject, GameObject> OnRegisterBlobHouse;

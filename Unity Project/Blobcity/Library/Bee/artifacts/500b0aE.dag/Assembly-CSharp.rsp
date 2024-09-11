@@ -353,6 +353,8 @@
 "Assets/Scripts/HouseManager.cs"
 "Assets/Scripts/MarkAndMatch.cs"
 "Assets/Scripts/ObjectTypeEnum.cs"
+"Assets/Scripts/OnSceneEnter.cs"
+"Assets/Scripts/OnSceneExit.cs"
 "Assets/Scripts/PlayerColliderController.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerInputManager.cs"

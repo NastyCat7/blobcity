@@ -8,6 +8,7 @@ public class MarkAndMatch : MonoBehaviour
     //RULES FOR NOW:
     //Marking is always possible, even if you already marked that type of object.
     //Marking should not work on already matched objects. (open-bool)
+    //Match removes marked objects when successful, else the objects stay marked.
 
     private GameObject markedHouse;
     private GameObject markedBlob;
@@ -111,7 +112,9 @@ public class MarkAndMatch : MonoBehaviour
             {
                 AssignBlobToHouse();
                 Debug.Log("A good match!");
-            
+
+                Actions.OnMatchMade?.Invoke();
+                
                 markedBlob = null;
                 markedHouse = null;
             } 

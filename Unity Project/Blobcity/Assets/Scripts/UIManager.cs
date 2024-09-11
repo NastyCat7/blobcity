@@ -16,14 +16,14 @@ public class UIManager : MonoBehaviour
     {
         Actions.OnBlobMarked += ChangeBlobUI;
         Actions.OnHouseMarked += ChangeHouseUI;
-        Actions.OnMatch += DisableUI;
+        Actions.OnMatchMade += DisableUI;
     }
 
     private void OnDisable()
     {
         Actions.OnBlobMarked -= ChangeBlobUI;
         Actions.OnHouseMarked -= ChangeHouseUI;
-        Actions.OnMatch -= DisableUI;
+        Actions.OnMatchMade -= DisableUI;
     }
 
     private void ChangeBlobUI(BlobData data)
